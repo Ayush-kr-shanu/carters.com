@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Add</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            height: 35px;
+            background-color: blanchedalmond;
+            padding: 30px;
+        }
+        .container{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+        ul{
+            list-style: none;
+        }
+        .firstbox{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+        .firstbox h3{
+            color: rgb(0,169,224);
+            font-size: 50px;
+            align-content: center;
+        }
+        .secondbox{
+            font-size: 25px;
+            color: rgb(7, 117, 16);
+
+        }
+        .thirdbox button>img{
+            width: 20%;
+            border-radius: 50px;
+        }
+        button{
+            border: none;
+            background-color: blanchedalmond;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="firstbox">
+                <ul class="brands">
+                    <li><a href="#"><h3>Carter's</h3></a></li>
+                </ul>
+            </div>
+            <div class="secondbox">
+                <div>Free Shipping on $35+ Orders</div>
+            </div>
+            <div class="thirdbox">
+                <button id="logout"><img src="./download.png"><p>Logout</p></button>
+            </div>
+        </div>
+    </nav>
+    <h2 style="text-align: center;">Add Product form here</h2>
+    <form action="">
+        <h3>Image</h3>
+        <input type="link" placeholder="Product image link" id="img" required>
+        <h3>Product Name</h3>
+        <input type="text" placeholder="Name of Product" id="name" required>
+        <h3>Price</h3>
+        <input type="number" placeholder="Product price" id="price" required>
+        <h3>Brand</h3>
+        <input type="text" placeholder="Brand" id="brand" required>
+        <h3>Category</h3>
+        <select id="category">
+            <option value="">Category</option>
+            <option value="baby-boy">Baby-Boy</option>
+            <option value="baby-girl">Baby-Girl</option>
+        </select>
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>
+<script src="./productAdd.js"></script>
