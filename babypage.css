@@ -1,0 +1,153 @@
+#main-container{
+    width: 90%;
+    margin: auto;
+}
+#main-container h1{
+    text-align: center;
+    color: rgb(78, 175, 236);
+}
+#main-container #content{
+    text-align: center;
+}
+#card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+#firstcontainer{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+#imgdiv{
+    width: 100%;
+}
+#imgdiv img{
+    width: 100%;
+}
+#subdiv{
+    width: 50% ;
+    background-color: rgb(245, 248, 252);
+    padding: 50px;
+}
+#subdiv h4{
+    font-size: 20px;
+    color: rgb(100, 160, 250);
+}
+#subdiv h3{
+    font-size: 20px;
+}
+#genderdiv{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border-top-style: dashed ;
+    border-bottom-style: dashed;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#gendercatagery{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+#gendercatagery img{
+    border-radius: 120px;
+}
+#boy{
+    width: 33%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: white;
+    margin-top: -60px;
+    
+}
+#boy a{
+    text-decoration: none;
+    color: white;
+}
+#sizediv{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom-style: dashed;
+}
+#size{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#size a{
+    width: 20%;
+    height: 90px;
+    background-color: rgb(112, 162, 224);
+    border-radius: 70px;
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+    padding-top: 10px;
+}
+#size>a>h1{
+    color: aliceblue;
+}
+#size>a>h1:hover{
+    color: rgb(88, 88, 138);
+}
+#categorydiv{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+#categorydiv img{
+    width: 100%;
+}
+#categorydiv a{
+    text-decoration: none;
+    color: black;
+}
+#categorydiv p{
+    font-size: 20px;
+}
+#adcontainer{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+    border-bottom-style: dashed;
+    padding-bottom: 30px;
+}
+#card1{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    border: 1px solid gray;
+}
+#adcontainer div{
+    width: 90%;
+}
+#adcontainer img{
+    width: 100%;
+}
+#carddata{
+    background-color: aliceblue;
+    padding: 20px;
+    width: 100%;
+    padding-top: 5%;
+}
+#carddata h3{
+    color: rgb(78, 175, 236);
+    font-size: 30px;
+}
+#carddata a{
+    text-decoration: none;
+    color: black;
+}
