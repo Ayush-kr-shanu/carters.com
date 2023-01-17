@@ -1,0 +1,169 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-container{
+    border: 1px solid black;
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(235, 233, 233)
+}
+#salePart{
+    height: 50px;
+    text-align: center;
+}
+form{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 80px;
+}
+form input[type="text"]{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+}
+#siginBtn{
+    border-radius: 10px;
+    display: flex;
+    width: 20%;
+    height: auto;
+    color: white;
+    background-color: rgb(77, 190, 234);
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+   margin-bottom: 30px;
+    font-size: 20px;
+}
+#siginBtn:hover{
+    border: 2px solid skyblue;
+}
+#lockIcon{
+    margin-left: 110px;
+    margin-right: 10px;
+    align-items: center;
+    height: 40%;
+    width: 10%;
+}
+.form-container h1{
+    
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.form-container p{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: gray;
+    font-size: 18px;
+}
+#CreateAccountBtn{
+    width: 20%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px;
+    font-size:20px;
+    margin-left: 40%;
+    margin-bottom: 40px;
+}
+#createAccount h1{
+    width: 70%;
+    margin: auto;
+}
+#createAccount p{
+    color: gray;
+    margin: auto;
+    margin-top:20px ;
+    text-align: left;
+    font-size: 20px;
+    
+}
+.Accountform-container{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.Accountform-container>div{
+   
+    width: 45%;
+}
+.left{
+    padding: 10px;
+}
+#left-p{
+    margin-top: 20px;
+    text-align: left;
+    margin-right: 30%;
+}
+.left input[type = "text"]{
+    padding: 8px;
+    width: 90%;
+    font-size: 20px;
+    margin-top: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.right{
+    padding: 10px;
+}
+#right-p{
+    margin-top: 20px;
+    text-align: left;
+    margin-right: 30%;
+}
+.right input[type = "text"]{
+    padding: 8px;
+    width: 90%;
+    font-size: 20px;
+    margin-top: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.both-button{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.both-button button{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#button1{
+    background-color: rgb(77, 190, 234);
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+}
+#button1:hover{
+    border: 2px solid skyblue;
+}
+#button2{
+    padding: 5px;
+    font-size: 20px;
+    width: 30%;
+    cursor: pointer;
+    
+}
+.both-button p{
+    font-size: 20px;
+}
+#createAccountContainer{
+    display: none;
+}

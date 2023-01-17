@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Page</title>
+    <link rel="stylesheet" href="Styles/login.css">
+</head>
+<body>
+    <div class="form-container">
+        <div id="signin">
+            <div id="salePart">
+                <h3>ENDS TODAY! CLEARANCE STARTING AT $3.99</h3>
+                <hr>
+            </div>
+            <h1>Hi Welcom to  carter's</h1>
+            <form id="signINform" action="">
+               <input type="text" placeholder="Email" id="loginName">
+               <input type="text" placeholder="Password" id="loginPassword">
+            </form>
+            <div id="siginBtn">
+                    <img id="lockIcon" src="images/icons8-lock-32.png" alt="">
+                    <h3>Sign In</h3>
+            </div>
+            <p> <i>New to our site or enrolled in My Rewarding Moments™ in store?</i> </p>
+            <button id="CreateAccountBtn">Create Account</button>
+        </div>
+        <div id="createAccountContainer">
+            <div id="createAccount">
+                <div id="salePart">
+                    <h3>ENDS TODAY! CLEARANCE STARTING AT $3.99</h3>
+                    <hr>
+                </div>
+                <h1>Create a new account</h1>
+                <p>Sign up today and enroll in My Rewarding Moments™ to start earning points!</p>
+            </div>
+           
+            <div class="Accountform-container">
+                <div class="left">
+                    <input type="text" placeholder="Email" id="email">
+                    <p id="left-p">If you enrolled in My Rewarding Moments™ in one of <br> our stores, be sure to use the same email address.</p>
+                    <input type="text" name="" id="User_fullName" placeholder="Name">
+                    <p id="left-p">Please enter your full name for better experience</p>
+                </div>
+                <div class="right">
+                    <input type="text" placeholder="Password" id="password">
+                    <p id="left-p">8-20 characters long <br>
+                        Includes one letter <br>
+                        Includes one number</p>
+                    <input type="text" placeholder="Confirm Password"id="confirmedPass">
+                    <p id="left-p">Remember, your password is 8-20 characters, <br> includes one letter and one number.</p>
+                </div>
+            </div>
+            <div class="both-button">
+                <!-- Create Account button in Create Account Form -->
+                <button id="button1">Create Account</button>
+                <p>Already have an account?</p>
+                <!-- signIn button Create Account form -->
+                <button id="button2">Sig In</button>
+            </div>
+        </div>
+    </div>
+    <script src="loginPage.js"></script>
+</body>
+</html>
