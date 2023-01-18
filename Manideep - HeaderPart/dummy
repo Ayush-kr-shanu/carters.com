@@ -1,0 +1,31 @@
+                
+ < ---------- IMPORTENT ID'S ---------- >
+
+
+NAME                ID              HREF    
+
+Sign-in            user-name        login.html
+
+Hearts             wish-list        wishlist.html
+
+Orders             orders           orders.html
+
+Cart               cart             cart.html
+
+
+< ---------- Mega-Menu ID'S ---------- >
+
+
+BabyGirl          baby-girl-img      use ( window.location.href="url" ) in JS 
+
+BabyBoy           baby-boy-img       use ( window.location.href="url" ) in JS
+
+
+< ---------- Search ID'S ---------- >
+
+
+Search-box        search-input          -
+
+Search-Button     search-btn            -
+
+Homepage-logo     home-logo            index.html
