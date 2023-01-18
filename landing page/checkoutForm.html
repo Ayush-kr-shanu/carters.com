@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <link rel="stylesheet" href="checkoutForm.css">
+</head>
+<body> 
+    <div id="paymentContainer">
+        <div class="formContainer">
+            <h1 id="formHeading">DELIVERY ADDRESS</h1>
+            <hr>
+            <form action="">
+                <input type="text" placeholder="First name" id="FirstName"  required>
+                <input type="text" placeholder="Last name" id="LastName"    required>
+                <input type="text" placeholder="Address" id="Address"   required>
+                <input type="text" placeholder="Email" id="email"   required>
+                <input type="number" placeholder="Phone" id="phone" required>
+                <input type="text" placeholder="Nearest Landmark" id="landmark" required>
+            </form>
+            
+         </div>
+         <div id="order-details">
+            <h1 id="item"> <span id="total-number-of-products">1</span> Item </h1>
+            <hr>
+            <div id="image">
+                <img src="http://cdn.shopify.com/s/files/1/0557/0078/3242/products/boss-baby-1-White.jpg?v=1642002831" alt="">
+            </div>
+            <h2> Total : <span id="totalPrice">$200</span></h2>
+            <input type="text" name="" id="couponCode" placeholder="Apply Coupon Code">
+            <button id="applyBtn"><b>Apply</b></button>
+            <h2> SUB Total : <span id="totalPrice">$140</span></h2>
+         </div>
+
+         
+    </div>
+    <button id="placeOrder"><b>PLACE ORDER</b></button>
+   
+
+   <script src="checkoutForm.js"></script>
+</body>
+</html>
