@@ -1,7 +1,248 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro&display=swap');
+
+*{
+   
+    box-sizing: border-box;
+}
 #container{
-    width: 98%;
+  width: 98%;
+  margin: auto;
+}
+#main-container{
+    width: 90%;
     margin: auto;
 }
+
+.header-top{
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+.header-top>div{
+    width:33%;
+}
+
+/* -------------------- Top-NAV LEFT-part -------------------- */
+
+.header-top>.top-left>ul{
+    display: flex;
+    align-items: center;
+}
+.header-top>.top-left>ul>li{
+   list-style: none;
+   padding: 0px 7px;
+}
+.header-top>.top-left>ul>li>a{
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    font-size: 12px;
+    font-weight: 800;
+}
+.header-top>.top-left>ul>li>a:hover{
+    color: gray;
+}
+.header-top>.top-left{
+    padding: 0px 10px;
+}
+
+/* -------------------- TOP-NAV MIDDLE -------------------- */
+
+.header-top>.top-middle{
+    display: flex;
+    justify-content: center;
+    color: #444444;
+}
+
+/* -------------------- TOP-NAV RIGHT-part -------------------- */
+
+.header-top>.top-right{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 14px;
+}
+.header-top>.top-right>div a{
+    text-decoration: none;
+    color: gray;
+}
+.header-top>.top-right > div{
+    width: 18%;
+    display: flex;
+    align-items: center;
+}
+.header-top>.top-right>.items>.cred-img>img{
+    width: 22px;
+}
+.header-top>.top-right>.items>.cred-title>a{
+    font-size: 15px;
+}
+.header-top>.top-right>.items a:hover{
+    text-decoration: underline;
+}
+
+/* -------------------- BOTTOM NAV LEFT-PART -------------------- */
+
+.header-bottom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    height: 90px;
+    border: 1px solid #ebebeb;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.header-bottom > .bottom-left {
+    margin-right: 90px;
+    padding-top: 6px;
+}
+.header-bottom > .bottom-left img{
+    width: 140px;
+}
+
+/* -------------------- BOTTOM-NAV MIDDLE -------------------- */
+
+.header-bottom > .bottom-middle{
+    margin: 0px 100px;
+}
+.header-bottom > .bottom-middle >ul{
+    display: flex;
+}
+.header-bottom > .bottom-middle > ul > li{
+    list-style: none;
+    padding: 0px 13px;
+    align-items: center;
+}
+.header-bottom > .bottom-middle > ul > li >a{
+    text-decoration: none;
+    color: black;
+    padding: 30px 20px;
+    font-size: 18px;
+}
+.header-bottom > .bottom-middle > ul > li >a:hover{
+    border-bottom: 3px solid #00a9e0;
+}
+
+/* -------------------- BOTTOM-NAV RIGHT-PART -------------------- */
+
+.bottom-right{
+    margin-left: 35px;
+}
+.bottom-right > input {
+    padding: 12px 22px;
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: #dcdcdc52;
+}
+.fa-search:before {
+    content: "\f002";
+    font-size: 20px;
+    padding: 6px 4px;
+    color: white;
+    background-color: #00a9e0;
+    border-radius: 3px;
+    display: flex;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+/* -------------------- MEGAMENU PART -------------------- */
+
+.megamenu{
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    top: 100%;
+    transition: 0.5s;
+    padding: 20px 30px;
+    border-style: solid;
+    border-color: rgba(176, 176, 176, 0.931);
+    border-width: thin;
+    left: 0%;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    background-color: white;
+}
+.header-bottom > .bottom-middle > ul > li:hover .megamenu{
+    opacity: 1;
+    visibility: visible;
+}
+.megamenu > .baby-girl li{
+    list-style: none;
+    padding: 14px 20px;
+    border-bottom: 1px solid #8484847d;
+    display: flex;
+    justify-content: space-between;
+}
+.megamenu > .baby-girl li:hover{
+    color:#00a9e0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.megamenu > .megamenu-items {
+    flex-basis: 21%;
+    margin: 0px 24px;
+}
+.megamenu > .baby-cloths> .baby-title{
+    color: #00a9e0bf;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.megamenu > .baby-cloths> .baby-images{
+    display: flex;
+    padding: 10px 0px;
+    padding-bottom: 13px;
+}
+.megamenu > .baby-cloths> .baby-images > div{
+    border-radius: 100px;
+    overflow: hidden;
+    box-shadow: rgb(60 64 67 / 15%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    text-align: center;
+    font-size: 9px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+.megamenu > .baby-cloths > .baby-images img{
+   width: 80%;
+}
+.megamenu > .baby-cloths > .baby-images > .imgBaby:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.megamenu > .baby-cloths > .baby-content {
+    font-size: 14px;
+    LETTER-SPACING: 1PX;
+}
+.megamenu > .cloth-sizes > .sizes-cont{
+    display: grid;
+    grid-template-columns: repeat(2,70px);
+    grid-template-rows: repeat(4,43px);
+    gap: 17px;
+}
+.megamenu > .cloth-sizes > .sizes-cont > button{
+    background-color: transparent;
+    border-radius: 5px;
+    border-width: thin;
+}
+.megamenu > .cloth-sizes > .sizes-cont > button:hover{
+    cursor: pointer;
+}
+.megamenu > .cloth-sizes > .size-title{
+    margin-bottom: 15px;
+    color: #808080a8;
+}
+hr.vertical {
+    height:100%; 
+    width:0;
+    border-style: solid;
+    border-color: #80808063;
+}
+/* navbar ends here */
 #offer{
     width: 100%;
     margin: auto;
@@ -51,6 +292,34 @@ a{
     width: 20%;
     
 }
+#btn{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   width: 75%;
+   border-radius: 20px;
+   
+}
+#btn p:hover{
+   
+    
+    
+}
+#count_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    width: 100%;
+    
+    border-top: 1px dashed blue;
+}
+
+#btn:hover{
+    background-color: #a2b6bd;
+    cursor: pointer;
+
+}
 #productdiv{
     width: 80%;
     margin: auto;
@@ -71,13 +340,12 @@ a{
     
 }
 #avaiblity img{
-    width: 90%;
+    width: 100%;
+    border: 1px solid red;
    
 }
 #avaiblity p{
-    border-top: dashed;
-    border-width: 0.5px;
-    border-color: rgb(119, 119, 244);
+   
     background-color: white;
 }
 #card{
@@ -86,13 +354,11 @@ a{
 
 }
 #card a{
-    font-size: 20px;
+    font-size: 15px;
     color: black;
-    margin-top: 5px;
+    
 }
-#card p{
-    padding-top: 15px;
-}
+
 #card p:hover{
     color: blueviolet;
 }
@@ -110,9 +376,7 @@ a{
     margin-top: 20px;
     width: 25%;
 }
-#hyx:hover{
 
-}
 .collapsible {
     color: rgb(4, 4, 4);
     cursor: pointer;
@@ -165,6 +429,7 @@ a{
     width:100% ;
     border-bottom: 1px dashed black;
   }
+  /* card---------------showed on dom------------- */
   #listedproduct{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -215,3 +480,81 @@ a{
   .addtofav:hover{
     font-size: 25px;
   }
+
+
+  /* footer css start here */
+#footer {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background-color: rgb(243, 243, 243);
+  /* border: 2px solid cyan; */
+}
+#SUPPORT{
+  width: 200px;
+  height: 500px;
+  /* border: 2px solid red; */
+  margin-left: 20px;
+  margin-top: 30px;
+
+
+}
+.foot_line{
+  width: 100%;
+  margin-top: 20px;
+  height: 2px;
+  background-color: rgb(208, 208, 208);
+}
+#SUPPORT h1 {
+  font-size: 17px;
+}
+#SUPPORT p {
+  font-size: 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  color:grey
+  
+}
+#ABOUT{
+  width: 200px;
+  height: 500px;
+  /* border: 2px solid red; */
+  margin-left: 120px;
+  margin-top: 30px;
+
+}
+#ABOUT h1 {
+  font-size: 17px;
+}
+#ABOUT p {
+  font-size: 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  color:grey
+  
+}
+#bottom{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 500px;
+  
+}
+#bottom div{
+  width: 50px;
+  height: 40px;
+  /* border: 1px solid red; */
+}
+#bottom img {
+  width: 80%;
+  height: 40px;
+}
+#end{
+  width: 100%;
+  height: 180px;
+  /* border: 1px solid black; */
+}
+#end p {
+  font-size: 13px;
+  color:grey;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}

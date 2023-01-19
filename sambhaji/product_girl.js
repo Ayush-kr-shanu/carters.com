@@ -1,12 +1,12 @@
-let data;
-let x=fetch("https://carters-com-data-base.onrender.com/baby-boy");
+let data1;
+let x=fetch("https://carters-com-data-base.onrender.com/baby-girl");
 x.then((res)=> {
   return res.json()
 })
 .then((actualData)=>{
-  data=actualData;
-  rendercard(data);
-  countdata(data);
+  data1=actualData;
+  rendercard(data1);
+  
 
 });
 
@@ -14,24 +14,10 @@ let lsdata=JSON.parse(localStorage.getItem("fav_data")) || [];
 let cartdata=JSON.parse(localStorage.getItem("cart_data")) || [];
 let container=document.getElementById("listedproduct");
 let count=document.getElementById("total");
-let bodysuit=document.getElementById("bodysuits");
-bodysuit.innerText = 0;
-let Accessories=document.getElementById("Accessories");
-Accessories.innerText = 0;
-
-function countdata(data){
-  data.filter(element =>{
-    if(element.ProdCategory=="Bodysuit"){
-      bodysuit.innerText++;
-    }else if(element.ProdCategory=="Accessories & more"){
-      Accessories.innerText++
-    }
-  })
-}
-
 
 window.addEventListener("load",()=>{
     collap();
+    
 })
 function collap(){
     let coll = document.getElementsByClassName("collapsible");
@@ -48,8 +34,6 @@ function collap(){
     });
     }
 }
-
-
 
 
 function rendercard(data){
