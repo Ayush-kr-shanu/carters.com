@@ -21,6 +21,27 @@ form.addEventListener("submit",function(e){
     }
 })
 
+// let del=document.querySelector("#del")
+// del.addEventListener("submit",function(e){
+//     e.preventDefault()
+//     let delObj={
+//         id:form.id.value,
+//         category:form.category.value,
+//     }
+//     if(formObj.category=="Category"){
+//         alert("Please select category")
+//     }else{
+//         fetch(`https://carters-com-data-base.onrender.com/${formObj.category}`,{
+//             method: "DELETE",
+//             headers:{
+//                 "Content-Type": "application/json",
+//             }, 
+//             body:JSON.stringify(formObj),
+//         })
+//     }
+// })
+
+
 let btn=document.querySelector("#logout")
 btn.addEventListener("click",function(){
     window.location.assign("./admin.html")
