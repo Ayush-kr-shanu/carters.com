@@ -118,8 +118,9 @@
     margin: auto;
     margin-top: 20px;
     display: block;
-    padding: 9px 133px;
+    padding: 9px 0px;
     font-weight: bolder;
+    width: 100%;
     color: white;
     border-radius: 5px;
     background-color: #00a9e0;

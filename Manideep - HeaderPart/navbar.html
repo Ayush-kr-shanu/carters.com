@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Baby clothes, children's clothes, toddlers clothes</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/arcade/2x/shopping-cart.png" type="image/x-icon">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="header-container">
+        <!-- -------------------- TOP HEADER -------------------- -->
 
         <div class="header-top">
             <div class="top-left">
@@ -51,11 +54,14 @@
                 </div>
             </div>
         </div>
-        
-            <!-- -------------------- BOTTOM HEADER -------------------- -->
+
+        <!-- -------------------- TOP HEADER END -------------------- -->
+
+
+        <!-- -------------------- BOTTOM HEADER -------------------- -->
+
 
     <div class="header-bottom">
-
 
         <!-- HAMBURGER  -->
 
@@ -63,7 +69,7 @@
             <span id="ham-burger">&#9776; Shop by Category</span>
             <div class="menu-bar"></div>
         </div>
-
+        
 
         <!-- -------------------- BOTTOM LEFT LOGO -------------------- -->
 
@@ -236,7 +242,6 @@
 
         <!-- -------------------- BOTTOM RIGHT -------------------- -->
 
-
         <div class="search bottom-right b-child">
             <input type="text" class="search__input" placeholder="Find your product" id="search-input">
             <button class="search__button" id="search-btn">
@@ -250,21 +255,32 @@
 
     </div>
 
-    </div>
+</div>
 </body>
 
 
 
-
 <!-- <script>
+
     let id = document.getElementById("user-name");
     let signIn = document.getElementById("sign-in");
+    let search = document.getElementById("search-btn");
+    let searchBox = document.getElementById("search-input");
+
     signIn.addEventListener("click",(e)=>{
-        e.preventDefault();
-        id.innerText="Manideep"
-        window.location.href="#";
+        id.innerText="Sign-out"
     })
+
+    search.addEventListener("click",()=>{
+        if(searchBox.value == "google"){
+            window.location.href="https://www.google.com/";
+            //  window.open('http://www.google.com', '_blank');
+        }
+    })
+
 </script> -->
+
+
+
 </html>
 
-<!-- ^▲▽▼△∧∨  -->
