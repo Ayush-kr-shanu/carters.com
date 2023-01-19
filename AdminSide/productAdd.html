@@ -48,7 +48,32 @@
             border: none;
             background-color: blanchedalmond;
         }
-
+        form {
+            width: 30%;
+            margin: auto;
+            margin-top: 20px;
+            /* background-color: aqua; */
+            padding: 10px;
+        }
+        form input, form h3, form select{
+            margin-left: 15%;
+            margin-bottom: 7px;
+        }
+        form input, form select{
+            width: 70%;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid red;
+            padding-left: 5px;
+        }
+        #submit{
+            background-color: black;
+            color: white;
+            border: none;
+        }
+        #delh{
+            margin-top: 65px;
+        }
     </style>
 </head>
 <body>
@@ -64,11 +89,12 @@
             </div>
             <div class="thirdbox">
                 <button id="logout"><img src="./download.png"><p>Logout</p></button>
+                <a href="./allAPi.html"><button style="background-color: red; color: white; padding: 8px;">View JSON data</button></a>
             </div>
         </div>
     </nav>
     <h2 style="text-align: center;">Add Product form here</h2>
-    <form action="">
+    <form id="form">
         <h3>Image</h3>
         <input type="link" placeholder="Product image link" id="img" required>
         <h3>Product Name</h3>
@@ -83,6 +109,24 @@
             <option value="baby-boy">Baby-Boy</option>
             <option value="baby-girl">Baby-Girl</option>
         </select>
+        <br>
+        <input type="submit" id="submit">
+    </form>
+
+
+
+    <h2 style="text-align: center;" id="delh">Delete Product form here</h2>
+    <form id="del">
+        <h3>Id</h3>
+        <input type="link" placeholder="id to delete" id="id" required>
+        <br>
+        <h3>Category</h3>
+        <select id="category">
+            <option value="">Category</option>
+            <option value="baby-boy">Baby-Boy</option>
+            <option value="baby-girl">Baby-Girl</option>
+        </select>
+        <br>
         <input type="submit" id="submit">
     </form>
 </body>

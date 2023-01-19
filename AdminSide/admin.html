@@ -36,7 +36,33 @@
             width: 20%;
             border-radius: 50px;
         }
-
+        h1{
+            text-align: center;
+            color: blueviolet;
+        }
+        form {
+            width: 30%;
+            margin: auto;
+            margin-top: 20px;
+            /* background-color: aqua; */
+            padding: 10px;
+        }
+        form input, form h3, form select{
+            margin-left: 15%;
+            margin-bottom: 7px;
+        }
+        form input, form select{
+            width: 70%;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid red;
+            padding-left: 5px;
+        }
+        #submit{
+            background-color: black;
+            color: white;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -58,8 +84,8 @@
     <div id="form">
         <h1>Admin - Acess</h1>
         <form>
-            <input type="text" placeholder="User-Name" id="name" required>
-            <input type="password" placeholder="Password" id="pass" required>
+            <input type="text" placeholder="User-Name" id="name" required> <br>
+            <input type="password" placeholder="Password" id="pass" required> <br>
             <input type="submit" id="submit">
         </form>
     </div>
