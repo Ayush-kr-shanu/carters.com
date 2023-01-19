@@ -41,6 +41,7 @@ form input[type="text"]{
     cursor: pointer;
    margin-bottom: 30px;
     font-size: 20px;
+    overflow: wrap;
 }
 #siginBtn:hover{
     border: 2px solid skyblue;
@@ -95,7 +96,7 @@ form input[type="text"]{
     justify-content: space-around;
 }
 .Accountform-container>div{
-   
+
     width: 45%;
 }
 .left{
@@ -166,4 +167,9 @@ form input[type="text"]{
 }
 #createAccountContainer{
     display: none;
+}
+
+@media screen and (min-width:400px ) and (max-width: 900px){
+    
+
 }

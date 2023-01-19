@@ -12,6 +12,7 @@ document.getElementById("button2").addEventListener("click",()=>{
 document.getElementById("button1").addEventListener("click",()=>{
     let userInfo = {
         Email: document.getElementById("email").value,
+        fullName: document.getElementById("User_fullName").value,
         password: document.getElementById("password").value,
         ConfirmedPassword: document.getElementById("confirmedPass").value
     }
@@ -26,5 +27,22 @@ document.getElementById("button1").addEventListener("click",()=>{
 })
 
 document.getElementById("siginBtn").addEventListener("click",()=>{
-    console.log("working")
+    let EnteredEmail = document.getElementById("loginName").value;
+    let EnteredPassword = document.getElementById("loginPassword").value;
+    
+    for(let i=0;i<=login_Data.length-1;i++){
+        if(login_Data[i].Email === EnteredEmail){
+            if(login_Data[i].password === EnteredPassword){
+                alert("Sign in successfully")
+                window.location.assign("babypage.html");
+            }
+            else{
+                alert("Invalid Password");
+            }
+        }
+        else{
+            alert("Invalid Email")
+        }
+    }
+
 })
