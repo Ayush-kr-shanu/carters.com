@@ -8,6 +8,9 @@
       font-family: 'Poppins', sans-serif;
   }
   
+  .header-container{
+    font-family: 'Poppins', sans-serif;
+  }
   .header-top{
       padding-top: 3px;
       display: flex;
