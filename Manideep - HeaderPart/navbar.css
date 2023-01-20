@@ -156,6 +156,8 @@
     visibility: hidden;
     display: flex;
     justify-content: center;
+    z-index: 10;
+    background-color: white;
 }
 .header-bottom > .bottom-middle > ul > li:hover .megamenu{
     opacity: 1;
