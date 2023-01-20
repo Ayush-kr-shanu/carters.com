@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby clothes, children's clothes, toddlers clothes</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/arcade/2x/shopping-cart.png" type="image/x-icon">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <div class="cart-container">
+
+        <!--------------------- ADV-HEADER  --------------------->
+
+        <div class="cart-top">
+            <h4 style="text-align:center;color:#444444;padding:5px;font-size:.8rem;text-transform: none;letter-spacing: .5px;"><span style="color:#03A6E1">CURBSIDE PICKUP</span> only in the app! or <span style="color:#03A6E1">IN STORE PICKUP</span> super fast + free&nbsp;&nbsp; <a href="#" style=" color:#03A6E1;text-decoration: underline;" data-uw-rm-brl="false">get the details</a></h4>
+        </div>
+
+        <div class="cart-user-name">
+            <h3>
+                <span id="user-data-name">
+                    <!-- Append the name here  -->
+                    YOUR >
+                </span>cart<span id="cart-total">
+                    <!-- Append the cart-total here  -->
+                </span></h3>
+        </div>
+
+        <div class="cart-item-cont">
+
+
+            <!--------------------- CART ITEMS DATA  --------------------->
+
+        <div class="cart-left-data">
+
+            <div class="cart-addresses">
+                <button>Ship to address</button>
+                <button>Free Pickup in Store</button>
+            </div>
+            <h3 class="cart-status">Arrives in 3 to 10 Days</h3>
+
+            <div class="cart-item" id="append-cart">
+
+                <!--------------------- APPEND DATA HERE  --------------------->
+
+                <div class="cart-item-image" id="item-Image"> <img src="https://www.carters.com/dw/image/v2/AAMK_PRD/on/demandware.static/-/Sites-carters_master_catalog/default/dwaec81c71/productimages/1O541210.jpg?sw=140&sh=175&sfrm=jpg" alt=""> </div>
+
+                <!--------------------- CART ITEM INFO  --------------------->
+
+                <div class="cart-item-info">
+
+                    <span class="item-brand ele" id="item-Brand">
+                        brand
+                    </span>
+                    <p class="item-name" id="item-Name">
+                        Baby Valentine's Day 2-Way Zip Cotton Sleep & Play
+                    </p>
+                    <p class="item-category ele" id="item-Category">
+                        Category
+                    </p>
+
+                </div>
+
+                <!--------------------- CART ITEM QUANTITY --------------------->
+
+                <div class="item-qnt">
+                    Qty:<select id="item-Quant">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <!--------------------- CART ITEM PRICE  --------------------->
+
+                <div class="item-price">
+                    <p id="price">$100</p>
+                    <button id="remove-item">Remove</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!--------------------- CART BILL DATA  --------------------->
+
+        <div class="cart-right-data">
+            <h3 class="order-title">Order summery</h3>
+            <div class="order-details">
+
+                <div class="order-ele">
+                    <p>Sub Total</p>
+                    <p id="total-amount">$46</p>
+                </div>
+
+                <div class="order-ele">
+                    <p>Shipping</p>
+                    <p >$0</p>
+                </div>
+
+                <div class="order-ele">
+                    <p>Estimated tax</p>
+                    <p >$0</p>
+                </div>
+
+                <div class="order-ele">
+                    <h3>Order total</h3>
+                    <h3 id="grand-total">$46</h3>
+                </div>
+
+            </div>
+            <button id="check-out">Checkout</button>
+            <p>Exact shipping and taxes are calculated at checkout.</p>
+        </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

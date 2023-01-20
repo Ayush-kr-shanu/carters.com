@@ -1,8 +1,3 @@
-body{
-    padding: 0%;
-    margin: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-}
 /* navbar---------------------------------------------------------------------------navbar */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro&display=swap');
@@ -239,185 +234,117 @@ hr.vertical {
     border-style: solid;
     border-color: #80808063;
 }
+/* navbar---------------------------------------------------------------------------navbar */
+/* form CSS =====================================form CSS  */
 
-/* formpart-------------------------------------------------------------------formpart */
-
-
-.form-container{
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+    font-family: Arial;
+    font-size: 17px;
     
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .form-container{
+    padding: 10px;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
     width: 100%;
-    height: auto;
-    background-color: rgb(248, 245, 245)
-}
-#salePart{
-    height: 50px;
-    text-align: center;
-}
-form{
-    width: 70%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 80px;
-}
-form input[type="text"]{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: none;
-    padding: 10px;
-    font-size: 20px;
-}
-form input[type="password"]{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: none;
-    padding: 10px;
-    font-size: 20px;
-}
-#siginBtn{
-    border-radius: 10px;
-    display: flex;
-    width: 10%;
-    height: auto;
-    color: white;
-    background-color: rgb(77, 190, 234);
-    text-align: center;
-    padding-left: 22px;
-    margin: auto;
-    margin-top: 30px;
-    cursor: pointer;
-   margin-bottom: 30px;
-    font-size: 20px;
-    overflow: wrap;
-}
-#siginBtn:hover{
-    border: 2px solid skyblue;
-}
-
-.form-container h1{
-    
-    width: 70%;
-    margin: auto;
     margin-bottom: 20px;
-}
-.form-container p{
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    color: gray;
-    font-size: 18px;
-}
-#CreateAccountBtn{
-    width: 20%;
-    margin: auto;
-    margin-top: 30px;
-    padding: 5px;
-    font-size:20px;
-    margin-left: 40%;
-    margin-bottom: 15px;
-}
-#createAccount h1{
-    width: 70%;
-    margin: auto;
-}
-#createAccount p{
-    color: gray;
-    margin: auto;
-    margin-top:20px ;
-    text-align: left;
-    font-size: 20px;
-    
-}
-.Accountform-container{
-    width: 70%;
-    margin: auto;
-    margin-top: 30px;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-}
-.Accountform-container>div{
-
-    width: 45%;
-}
-.left{
-    padding: 10px;
-}
-#left-p{
-    margin-top: 20px;
-    text-align: left;
-    margin-right: 30%;
-}
-.left input[type = "text"]{
-    padding: 8px;
-    width: 90%;
-    font-size: 20px;
-    margin-top: 40px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.right{
-    padding: 10px;
-}
-#right-p{
-    margin-top: 20px;
-    text-align: left;
-    margin-right: 30%;
-}
-.right input[type = "text"]{
-    padding: 8px;
-    width: 90%;
-    font-size: 20px;
-    margin-top: 40px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.right input[type = "password"]{
-    padding: 8px;
-    width: 90%;
-    font-size: 20px;
-    margin-top: 40px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.both-button{
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.both-button button{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-#button1{
-    background-color: rgb(77, 190, 234);
-    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
     color: white;
-    padding: 8px;
-    font-size: 20px;
-    width: 30%;
+    padding: 12px;
+    margin: 10px 0;
     border: none;
+    width: 100%;
+    border-radius: 3px;
     cursor: pointer;
-}
-#button1:hover{
-    border: 2px solid skyblue;
-}
-#button2{
-    padding: 5px;
-    font-size: 20px;
-    width: 30%;
-    cursor: pointer;
-    
-}
-.both-button p{
-    font-size: 20px;
-}
-#createAccountContainer{
-    display: none;
-}
-
-/* footer--------------------------- */
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  a {
+    color: #2196F3;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+/* footer CSS =====================================footer CSS  */
 #footer {
     width: 100%;
     height: 500px;
