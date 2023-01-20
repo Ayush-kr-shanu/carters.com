@@ -19,3 +19,15 @@ Members of Project group
 
 
 <!--------------------------------------We are starting from here ------------------------------------------------------>
+1. Ayush kr Shanu 
+Me as a team leader worked and manage all the things running behined this project.
+I was worked on JSON server creation deploying and hardcoding data to make a beautiful API for 
+our project.
+I was worked on admin side for adding and delteting the data form the server form admin only.
+I founded bugs and improved.
+
+2. Manideep Peddaboini
+Me as team member worked or navbar of our project which is almost on HTML CSS only,
+I was also worked on 
+
+3. Harsh Sharma
