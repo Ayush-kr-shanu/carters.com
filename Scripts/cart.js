@@ -36,8 +36,12 @@ checkOut.addEventListener('click',()=>{
     window.location.href="./checkoutForm.html";
     temp = 0;
 })
-
-
+document.getElementById("baby-girl-img").addEventListener('click',()=>{
+    window.location.href = "/product_girl.html"
+})
+document.getElementById("baby-boy-img").addEventListener('click',()=>{
+    window.location.href = "/productpage.html"
+})
 
 
 function displaycart(data)
