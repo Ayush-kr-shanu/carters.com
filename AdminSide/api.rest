@@ -1,0 +1,3 @@
+GET : https://carters-com-data-base.onrender.com
+
+//This is the link for fetch the data of backend

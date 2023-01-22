@@ -1,0 +1,321 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
+
+  *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  .header-top{
+      padding-top: 3px;
+      display: flex;
+      align-items: center;
+      background-color: #f9f9f9;
+  }
+  .header-top>div{
+      flex-basis:33%;
+  }
+  
+  /* -------------------- Top-NAV LEFT-part -------------------- */
+  
+  .header-top > .top-left > .top-left-items{
+      display: flex;
+      padding: 0px 10px;
+  }
+  .header-top > .top-left > .top-left-items > li{
+      list-style: none;
+      padding: 7px;
+      font-size: 11px;
+      font-weight: bold;
+      color: rgb(170, 170, 170);
+      letter-spacing: 1px;
+  }
+  .header-top > .top-left > .top-left-items > li:hover{
+      color: gray;
+      cursor: pointer;
+  }
+  
+  /* -------------------- TOP-NAV MIDDLE -------------------- */
+  
+  .header-top>.top-middle{
+      display: flex;
+      justify-content: center;
+      font-size: 14px;
+      color: #444444;
+  }
+  
+  /* -------------------- TOP-NAV RIGHT-part -------------------- */
+  
+  .top-right,.top-right>div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 10px;
+  }
+  .top-right > .items > img{
+      width: 23px;
+  }
+  .top-right > .items > a{
+      color: #7d7d7d;
+      text-decoration: none;
+      font-size: 13px;
+  }
+  .top-right > .items > a:hover{
+      text-decoration: underline;
+  }
+  
+  /* -------------------- BOTTOM NAV  -------------------- */
+  
+  .header-bottom {
+      position: relative;
+      display: flex;
+      height: 90px;
+      justify-content: space-evenly;
+      align-items: center;
+      border: 1px solid #ebebeb;
+      background-color: white;
+      font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  /* HamBurger  */
+  
+  .res-bar{
+      display: none;
+  }
+  
+  /* -------------------- BOTTOM Mid-part -------------------- */
+  
+  .header-bottom > .bottom-middle > ul{
+      display: flex;
+  }
+  .header-bottom > .bottom-middle > ul > li{
+      list-style: none;
+      padding: 0px 13px;
+  }
+  .header-bottom > .bottom-middle > ul > li > a {
+      color: black;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 30px 20px;
+  }
+  .header-bottom > .bottom-middle > ul > li >a:hover{
+    border-bottom: 3px solid #00a9e0;
+}
+  
+  /* -------------------- BOTTOM Left-part -------------------- */
+  
+  .header-bottom > .bottom-left > a > img{
+      padding-top: 10px;
+      width: 140px;
+  }
+  
+  
+  
+  
+  /* -------------------- MEGAMENU PART -------------------- */
+  
+  .megamenu{
+      position: absolute;
+      width: 100%;
+      height: 450px;
+      background-color: white;
+      z-index: 10;
+      top: 100%;
+      transition: 0.5s;
+      padding: 20px 30px;
+      border-style: solid;
+      border-color: rgba(176, 176, 176, 0.931);
+      border-width: thin;
+      left: 0%;
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      justify-content: center;
+  }
+  .header-bottom > .bottom-middle > ul > li:hover .megamenu{
+      opacity: 1;
+      visibility: visible;
+  }
+  .megamenu > .baby-girl li{
+      list-style: none;
+      padding: 14px 20px;
+      border-bottom: 1px solid #8484847d;
+      display: flex;
+      justify-content: space-between;
+  }
+  .megamenu > .baby-girl li:hover{
+      color:#00a9e0;
+      font-weight: bold;
+      cursor: pointer;
+  }
+  .megamenu > .megamenu-items {
+      flex-basis: 21%;
+      margin: 0px 24px;
+  }
+  .megamenu > .baby-cloths> .baby-title{
+      color: #00a9e0bf;
+      font-size: 23px;
+      margin-bottom: 10px;
+  }
+  .megamenu > .baby-cloths> .baby-images{
+      display: flex;
+      padding: 10px 0px;
+      padding-bottom: 13px;
+  }
+  .megamenu > .baby-cloths> .baby-images > div{
+      border-radius: 100px;
+      overflow: hidden;
+      box-shadow: rgb(60 64 67 / 15%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+      text-align: center;
+      font-size: 9px;
+      padding-bottom: 5px;
+      margin-right: 10px;
+  }
+  .megamenu > .baby-cloths > .baby-images img{
+     width: 80%;
+  }
+  .megamenu > .baby-cloths > .baby-images > .imgBaby:hover{
+      cursor: pointer;
+      text-decoration: underline;
+  }
+  .megamenu > .baby-cloths > .baby-content {
+      font-size: 14px;
+      LETTER-SPACING: 1PX;
+  }
+  .megamenu > .cloth-sizes > .sizes-cont{
+      display: grid;
+      grid-template-columns: repeat(2,70px);
+      grid-template-rows: repeat(4,43px);
+      gap: 17px;
+  }
+  .megamenu > .cloth-sizes > .sizes-cont > button{
+      background-color: transparent;
+      border-radius: 5px;
+      border-width: thin;
+  }
+  .megamenu > .cloth-sizes > .sizes-cont > button:hover{
+      cursor: pointer;
+  }
+  .megamenu > .cloth-sizes > .size-title{
+      margin-bottom: 15px;
+      color: #808080a8;
+  }
+  hr.vertical {
+      height:100%; 
+      width:0;
+      border-style: solid;
+      border-color: #80808063;
+  }
+  
+
+/* -------------------- BOTTOM-NAV RIGHT-PART -------------------- */
+
+    /* SEARCH  */
+  
+    .bottom-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+      }
+      
+      .search__input {
+        font-family: inherit;
+        font-size: inherit;
+        background-color: #f4f2f2;
+        border: none;
+        color: #646464;
+        padding: 0.7rem 1rem;
+        border-radius: 30px;
+        width: 15em;
+        transition: all ease-in-out .5s;
+        margin-right: -2rem;
+      }
+      
+      .search_input:hover, .search_input:focus {
+        box-shadow: 0 0 1em #00000013;
+      }
+      
+      .search__input:focus {
+        outline: none;
+        background-color: #f0eeee;
+      }
+      
+      .search__input::-webkit-input-placeholder {
+        font-weight: 100;
+        color: #ccc;
+      }
+      
+      .search_input:focus + .search_button {
+        background-color: #f0eeee;
+      }
+      
+      .search__button {
+        border: none;
+        background-color: #f4f2f2;
+        margin-top: .1em;
+      }
+      
+      .search__button:hover {
+        cursor: pointer;
+      }
+      
+      .search__icon {
+        height: 1.3em;
+        width: 1.3em;
+        fill: #b4b4b4;
+      }
+  
+  
+  /* -------------------- MEDIA-QUERIES -------------------- */
+  
+      /* HEADER TOP  */
+  
+      @media (min-width:826px) and (max-width:1000px){
+          .top-right > .items > a{
+              display: none;
+          }
+          .header-top>.top-right{
+              flex-basis:18%;
+          }
+          .header-top>.top-left{
+              flex-basis:38%;
+          }
+          .header-top>.top-middle{
+              flex-basis:42%;
+          }
+          .header-top > .top-left > .top-left-items > li{
+              padding: 7px 5px;
+          }
+      }
+      
+      @media (max-width:825px) {
+          .header-top{
+              display: none;
+          }
+      }
+      
+      /* HEADER BOTTOM  */
+      
+      @media (max-width:1100px) {
+          .bottom-middle{
+              display: none;
+          }
+          .res-bar{
+              display: block;
+              margin-left:30px
+          }
+          .header-bottom {
+              justify-content: space-between;
+          }
+          .bottom-right{
+              margin-right: 40px;
+          }
+      
+      }
+  
+  
+  
+  

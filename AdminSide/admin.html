@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carters||Admin</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            height: 35px;
+            background-color: blanchedalmond;
+            padding: 25px;
+        }
+        .container{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+        .firstbox{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+        .secondbox{
+            font-size: 25px;
+            color: rgb(7, 117, 16);
+
+        }
+        .thirdbox>img{
+            width: 20%;
+            border-radius: 50px;
+        }
+        h1{
+            text-align: center;
+            color: blueviolet;
+        }
+        form {
+            width: 30%;
+            margin: auto;
+            margin-top: 20px;
+            /* background-color: aqua; */
+            padding: 10px;
+        }
+        form input, form h3, form select{
+            margin-left: 15%;
+            margin-bottom: 7px;
+        }
+        form input, form select{
+            width: 70%;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid red;
+            padding-left: 5px;
+        }
+        #submit{
+            background-color: black;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="firstbox">
+                <ul class="brands">
+                    <li><a href="#"><h3>Carter's</h3></a></li>
+                </ul>
+            </div>
+            <div class="secondbox">
+                <div>Free Shipping on $35+ Orders</div>
+            </div>
+            <div class="thirdbox">
+                <img src="./download.png">
+            </div>
+        </div>
+    </nav>
+    <div id="form">
+        <h1>Admin - Acess</h1>
+        <form>
+            <input type="text" placeholder="User-Name" id="name" required> <br>
+            <input type="password" placeholder="Password" id="pass" required> <br>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
+<script src="./admin.js"></script>

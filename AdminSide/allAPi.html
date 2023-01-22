@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            height: 35px;
+            background-color: blanchedalmond;
+            padding: 30px;
+        }
+
+        .container {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .firstbox {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .firstbox h3 {
+            color: rgb(0, 169, 224);
+            font-size: 50px;
+            align-content: center;
+        }
+
+        .secondbox {
+            font-size: 25px;
+            color: rgb(7, 117, 16);
+
+        }
+
+        .thirdbox button>img {
+            width: 20%;
+            border-radius: 50px;
+        }
+
+        button {
+            border: none;
+            background-color: blanchedalmond;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            margin-top: 15px;
+            border: 1px solid teal;
+            margin-bottom: 20px;
+        }
+        table th{
+            border: 1px solid teal;
+        }
+        tbody  td{
+            border: 1px solid teal;
+        }
+        tbody img{
+            width: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="firstbox">
+                <ul class="brands">
+                    <li><a href="#">
+                            <h3>Carter's</h3>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="secondbox">
+                <div>Free Shipping on $35+ Orders</div>
+            </div>
+            <div class="thirdbox">
+                <button id="logout"><img src="./download.png">
+                    <p>Logout</p>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Brand</th>
+                <th>Category</th>
+                <th>Product Category</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+<script src="./allAPi.js"></script>
+</html>
