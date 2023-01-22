@@ -301,6 +301,7 @@ height: auto;
 
 }
 .main-screen .btn ul{
+   
     display: flex;
     margin: auto;
     background: rgb(208, 236, 247);
@@ -310,6 +311,7 @@ height: auto;
 
 
 .main-screen .btn ul li button{
+    cursor: pointer;
     text-decoration: none;
     display: block;
     text-align: center;

@@ -31,5 +31,12 @@ const swiper = new Swiper(
   2000
 );
 
-
+let babygirl=document.getElementById("baby-girl-img");
+babygirl.addEventListener("click",()=>{
+  window.location.href="../product_girl.html";
+})
+let babyboy=document.getElementById("baby-boy-img");
+babyboy.addEventListener("click",()=>{
+  window.location.href="../productpage.html";
+})
 
