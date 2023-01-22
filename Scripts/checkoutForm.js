@@ -15,7 +15,7 @@ paymentBtn.addEventListener("click",function(e){
    billingForm.style.display="none";
     let amountSection  = document.querySelector(".col-25");
     amountSection.style.display="none";
-    localStorage.clear();
+    localStorage.removeItem("cart_data");
    
 })
 
