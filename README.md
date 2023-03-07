@@ -5,6 +5,8 @@ JS201 Batch Project starts on 16-01-2023 and completed on 21-01-2023
 Project Code => coordinated-crib-6423 <br>
 Website Name => carters.com
 
+Deployed lin => https://adorable-raindrop-e0f0b2.netlify.app
+
 Project type => E-commerce
 
 Collaborative / Solo => Collaborative of 5 member
